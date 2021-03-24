@@ -22,12 +22,10 @@ body {
 
 .container {
   width: 1200px;
-  /*background-color: var(--main-bg-text-color);*/
   margin: 0px auto;
   padding-left: 15px;
   padding-right: 15px;
 }
-
 /*Шапка сайта*/
 .header-bg {
   background-color: var(--main-bg-text-color);
@@ -42,7 +40,7 @@ body {
   line-height: 1.19;
   color: var(--logo-button-color);
   text-decoration: inherit;
-  margin: 24px 93px 25px 0px;
+  /* margin: 24px 93px 25px 0px;*/
 }
 
 .accent-white {
@@ -52,27 +50,75 @@ body {
   color: var(--accent--text-color);
 }
 
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .site-nav-item {
   font-weight: 500;
   list-style-type: none;
   color: inherit;
   letter-spacing: 0.02em;
-  margin-right: 50px;
+  /*margin-right: 50px;
+}
+.site-nav-item:not(last-child): {
+  margin-right: 50;*/
 }
 .site-nav {
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0 0 0 95px;
+  padding-left: 0;
+}
+.site-nav:not(last-child): {
+  margin-right: 50;
 }
 
-.site-nav,
+/* from Dima css*/
+.nav-list {
+  display: flex;
+  margin-left: 95px;
+}
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.nav-item:not(:last-child),
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts-list {
+  display: flex;
+  margin-left: auto;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+/*.site-nav,
 .link {
   display: flex;
+}*/
+.nav-link,
+.contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
-
+.contacts-link {
+  color: var(--link-paragraph-color);
+}
 header nav,
 header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 
 header {
@@ -96,6 +142,7 @@ header {
 }
 a {
   text-decoration: none;
+  font-weight: 500;
 }
 
 /*Основное*/
@@ -186,6 +233,12 @@ h3 {
   line-height: 1.14;
 }
 
+margin-bottom: 10px;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
+
 /*Особенности*/
 
 .features-bg,
@@ -195,13 +248,13 @@ h3 {
 
 .list-feature {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .item-feature {
-  margin: 94px 0px;
+  margin-top: 94px;
   width: 270px;
   min-height: 101px;
-  justify-content: space-between;
+  /*justify-content: space-between;*/
 }
 
 .item-feature p {
@@ -272,6 +325,7 @@ button {
   font-style: normal;
   font-weight: 500;
   color: var(--main-text-color);
+  font-size: 16px;
 }
 
 .button-order {
@@ -329,7 +383,7 @@ a:focus {
 }
 
 .portfolio-filter {
-  margin-bottom: 34px;
+  margin-bottom: 50px;
   margin-top: 0;
 }
 
@@ -355,8 +409,9 @@ a:focus {
   background-color: var(--second-bg-color);
 }
 .footer-section {
-  display: flex;
-  flex-direction: column;
+  display: block;
+  /*flex-direction: column;*/
+  padding: 60px 0;
 }
 
 address {
@@ -366,12 +421,17 @@ address {
   line-height: 1.7;
 }
 
+address a: {
+  padding-bottom: 9px;
+}
 .link-footer {
   color: var(--link-footer);
   font-size: 14px;
   line-height: 1.71;
-  margin-bottom: 9px;
 }
+/*.link-footer:not(:last-child): {
+  margin-bottom: 9px;
+}*/
 
 address {
   display: inline-flex;
@@ -380,9 +440,9 @@ address {
 }
 .footer-section .logo {
   margin-bottom: 20px;
-  padding-right: auto;
+  /*padding-right: auto;*/
 }
-span {
+.adress-item {
   margin-bottom: 9px;
 }
 
@@ -393,5 +453,10 @@ span {
   line-height: 1.19;
   color: var(--logo-button-color);
   text-decoration: inherit;
-  margin: 60px 0 20px 0px;
+  margin: 0px 0 20px 0px;
+  display: block;
+}
+
+footer {
+  display: block;
 }
