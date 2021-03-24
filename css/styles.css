@@ -29,8 +29,6 @@ body {
 /*Шапка сайта*/
 .header-bg {
   background-color: var(--main-bg-text-color);
-  /*}
-.shadow {*/
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo-header {
@@ -40,7 +38,6 @@ body {
   line-height: 1.19;
   color: var(--logo-button-color);
   text-decoration: inherit;
-  /* margin: 24px 93px 25px 0px;*/
 }
 
 .accent-white {
@@ -60,11 +57,8 @@ body {
   list-style-type: none;
   color: inherit;
   letter-spacing: 0.02em;
-  /*margin-right: 50px;
 }
-.site-nav-item:not(last-child): {
-  margin-right: 50;*/
-}
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -76,7 +70,6 @@ body {
   margin-right: 50;
 }
 
-/* from Dima css*/
 .nav-list {
   display: flex;
   margin-left: 95px;
@@ -98,10 +91,7 @@ body {
   text-decoration: none;
   color: inherit;
 }
-/*.site-nav,
-.link {
-  display: flex;
-}*/
+
 .nav-link,
 .contacts-link {
   display: block;
@@ -132,17 +122,11 @@ header {
 .link {
   margin-right: 0;
 }
-.link-item {
-  color: var(--link-paragraph-color);
-  font-weight: 500;
-  padding-right: 50px;
-}
-.link-item:last-child {
-  padding-right: 0px;
-}
+
 a {
   text-decoration: none;
   font-weight: 500;
+  color: inherit;
 }
 
 /*Основное*/
@@ -233,12 +217,6 @@ h3 {
   line-height: 1.14;
 }
 
-margin-bottom: 10px;
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-transform: uppercase;
-
 /*Особенности*/
 
 .features-bg,
@@ -254,7 +232,6 @@ text-transform: uppercase;
   margin-top: 94px;
   width: 270px;
   min-height: 101px;
-  /*justify-content: space-between;*/
 }
 
 .item-feature p {
@@ -297,9 +274,6 @@ text-transform: uppercase;
   margin-top: 50px;
 }
 
-.list-team > li:last-child {
-  margin-right: 0px;
-}
 .team-bg {
   background-color: var(--team-bg-color);
 }
@@ -366,14 +340,10 @@ a:focus {
   margin: 20px 24px 4px;
 }
 
-/*.item-portfolio {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc(100% / 3 - 30px);
-}*/
 .list-portfolio {
   margin-bottom: 0px;
 }
+
 .item-portfolio p {
   margin: 0px 24px 20px 24px;
 }
@@ -410,7 +380,6 @@ a:focus {
 }
 .footer-section {
   display: block;
-  /*flex-direction: column;*/
   padding: 60px 0;
 }
 
@@ -424,23 +393,21 @@ address {
 address a: {
   padding-bottom: 9px;
 }
+
 .link-footer {
   color: var(--link-footer);
   font-size: 14px;
   line-height: 1.71;
 }
-/*.link-footer:not(:last-child): {
-  margin-bottom: 9px;
-}*/
 
 address {
   display: inline-flex;
   flex-direction: column;
   margin-bottom: 60px auto;
 }
+
 .footer-section .logo {
   margin-bottom: 20px;
-  /*padding-right: auto;*/
 }
 .adress-item {
   margin-bottom: 9px;
