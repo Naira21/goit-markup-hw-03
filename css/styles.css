@@ -1,3 +1,37 @@
+/*Глобальный сброс стилей*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Основные параметры*/
 :root {
   --main-text-color: #212121;
   --main-bg-text-color: white;
@@ -74,11 +108,15 @@ body {
   display: flex;
   margin-left: 95px;
 }
-.list {
-  list-style: none;
-  margin: 0;
-  padding-left: 0;
+
+.site-nav a {
+  padding: 32px 0;
 }
+.nav-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .nav-item:not(:last-child),
 .contacts-item:not(:last-child) {
   margin-right: 50px;
@@ -86,10 +124,6 @@ body {
 .contacts-list {
   display: flex;
   margin-left: auto;
-}
-.link {
-  text-decoration: none;
-  color: inherit;
 }
 
 .nav-link,
@@ -157,6 +191,8 @@ a {
 
 .hero-bg {
   background-color: var(--second-bg-color);
+  padding: 200px 0;
+  text-align: center;
 }
 .hero-title {
   font-weight: 900;
@@ -165,16 +201,10 @@ a {
   color: var(--main-bg-text-color);
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 200px 237px 30px 237px;
+  margin-bottom: 30px;
   display: inline-block;
   width: 696px;
-  height: 120px;
-}
-
-.hero {
-  background-color: var(--second-bg-color);
-  padding: 0;
-  text-align: center;
+  height: auto;
 }
 
 p {
@@ -186,13 +216,14 @@ p {
 
 .activity-bg {
   background-color: var(--main-bg-text-color);
+  padding-top: 0;
 }
 
 .section {
   text-align: center;
   list-style-type: none;
   display: flex;
-  margin: 94px 0;
+  padding: 94px 0;
 }
 
 ul {
@@ -276,9 +307,6 @@ h3 {
 
 .team-bg {
   background-color: var(--team-bg-color);
-}
-.team-section {
-  background-color: var(--team-bg-color);
   display: inline-block;
   text-align: center;
 }
@@ -287,7 +315,7 @@ h3 {
 button {
   display: inline-block;
   min-width: 73px;
-  height: 38px;
+  height: auto;
   font-family: inherit;
   cursor: pointer;
   background-color: var(--team-bg-color);
@@ -312,10 +340,9 @@ button {
   text-align: center;
   border-radius: 4px;
   width: 200px;
-  height: 50px;
+  height: auto;
   padding: 10px 32px;
   display: inline-block;
-  margin: 0 485px 200px;
 }
 
 button:focus,
@@ -347,10 +374,6 @@ a:focus {
 .item-portfolio p {
   margin: 0px 24px 20px 24px;
 }
-.img {
-  display: block;
-  max-width: 100%;
-}
 
 .portfolio-filter {
   margin-bottom: 50px;
@@ -377,8 +400,6 @@ a:focus {
 /*Футер*/
 .footer-bg {
   background-color: var(--second-bg-color);
-}
-.footer-section {
   display: block;
   padding: 60px 0;
 }
@@ -406,9 +427,9 @@ address {
   margin-bottom: 60px auto;
 }
 
-.footer-section .logo {
+/*.footer-section .logo {
   margin-bottom: 20px;
-}
+}*/
 .adress-item {
   margin-bottom: 9px;
 }
@@ -424,6 +445,6 @@ address {
   display: block;
 }
 
-footer {
+/*footer {
   display: block;
-}
+}*/
