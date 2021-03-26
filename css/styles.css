@@ -18,8 +18,10 @@ p {
 .list {
   list-style: none;
   padding-left: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
+
 .link {
   text-decoration: none;
   color: inherit;
@@ -56,15 +58,27 @@ body {
 
 .container {
   width: 1200px;
-  margin: 0px auto;
+  /*margin: 0px auto;*/
   padding-left: 15px;
   padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 /*Шапка сайта*/
 .header-bg {
   background-color: var(--main-bg-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
+.header-bg .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 .logo-header {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -72,6 +86,7 @@ body {
   line-height: 1.19;
   color: var(--logo-button-color);
   text-decoration: inherit;
+  margin-right: 93px;
 }
 
 .accent-white {
@@ -81,41 +96,32 @@ body {
   color: var(--accent--text-color);
 }
 
-.main-nav {
-  display: flex;
-  align-items: center;
-}
-
-.site-nav-item {
-  font-weight: 500;
-  list-style-type: none;
-  color: inherit;
-  letter-spacing: 0.02em;
-}
-
 .site-nav {
-  display: flex;
+  display: inline-flex;
+
+  /*display: flex;
   align-items: center;
-  list-style: none;
-  margin: 0 0 0 95px;
-  padding-left: 0;
+  margin-right: auto;*/
 }
+
 .site-nav:not(last-child): {
   margin-right: 50;
 }
 
 .nav-list {
   display: flex;
-  margin-left: 95px;
+  margin-right: 331px;
+  align-items: center;
+  margin-right: auto;
 }
 
-.site-nav a {
+/*.site-nav a {
   padding: 32px 0;
 }
-.nav-link {
+/*.nav-link {
   padding-top: 32px;
   padding-bottom: 32px;
-}
+}*/
 
 .nav-item:not(:last-child),
 .contacts-item:not(:last-child) {
@@ -126,40 +132,31 @@ body {
   margin-left: auto;
 }
 
-.nav-link,
+.nav-link {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
 .contacts-link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  /*padding-top: 32px;
+  padding-bottom: 32px;*/
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-.contacts-link {
   color: var(--link-paragraph-color);
-}
-header nav,
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header {
-  justify-content: space-between;
 }
 
 .current {
   color: var(--logo-button-color);
 }
 
-.link {
+/*.link {
   margin-right: 0;
-}
+}*/
 
 a {
   text-decoration: none;
-  font-weight: 500;
   color: inherit;
 }
 
@@ -191,9 +188,18 @@ a {
 
 .hero-bg {
   background-color: var(--second-bg-color);
-  padding: 200px 0;
+  height: 600px;
+}
+
+.hero {
+  align-items: center;
+  display: flex;
+}
+.hero-content {
+  justify-content: center;
   text-align: center;
 }
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -202,16 +208,10 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   width: 696px;
   height: auto;
-}
-
-p {
-  font-size: 16px;
-  line-height: 1.9;
-  color: var(--link-paragraph-color);
-  letter-spacing: 0.03em;
 }
 
 .activity-bg {
@@ -220,18 +220,20 @@ p {
 }
 
 .section {
-  text-align: center;
-  list-style-type: none;
-  display: flex;
-  padding: 94px 0;
+  /*text-align: center;*/
+  /*display: flex;*/
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 ul {
   padding-left: 0px;
 }
-.activity-bg > img {
-  margin-right: 30px;
-  flex-direction: row;
+.activity-item {
+  /*margin-right: 30px;
+  flex-direction: row;*/
+  display: flex;
+  justify-content: space-between;
 }
 
 h2 {
@@ -242,32 +244,39 @@ h2 {
   margin: 0;
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-}
-
 /*Особенности*/
 
 .features-bg,
 .activity-bg {
-  background-color: var(--main-bg-text-color: white);
+  background-color: var(--main-bg-text-color);
 }
-
+.feature-title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+}
 .list-feature {
   display: flex;
   justify-content: space-between;
 }
 .item-feature {
-  margin-top: 94px;
   width: 270px;
   min-height: 101px;
 }
 
-.item-feature p {
+.feature-description {
+  position: absolute;
+  width: 270px;
+  color: var(--link-paragraph-color);
   font-size: 14px;
+  line-height: 24px;
 }
+
+.activity-bg.section {
+  padding-top: 0;
+}
+
 /*Деятельность*/
 
 .list-activity {
@@ -290,27 +299,36 @@ h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 .list-team {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  margin-top: 50px;
+  /*margin: 0;*/
 }
 
-.list-team > li {
+.team-item {
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-right: 30px;
-  margin-top: 50px;
+  text-align: center;
 }
 
 .team-bg {
   background-color: var(--team-bg-color);
-  display: inline-block;
-  text-align: center;
+  /*display: inline-block;
+  text-align: center;*/
 }
 
+.team-member-position {
+  margin-bottom: 30px;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--link-paragraph-color);
+  letter-spacing: 0.03em;
+}
 /*Кнопки*/
 button {
   display: inline-block;
@@ -400,10 +418,12 @@ a:focus {
 /*Футер*/
 .footer-bg {
   background-color: var(--second-bg-color);
+}
+
+.footer-section {
   display: block;
   padding: 60px 0;
 }
-
 address {
   font-style: normal;
   color: var(--main-bg-text-color);
@@ -411,9 +431,9 @@ address {
   line-height: 1.7;
 }
 
-address a: {
+/*address a: {
   padding-bottom: 9px;
-}
+}*/
 
 .link-footer {
   color: var(--link-footer);
@@ -421,16 +441,16 @@ address a: {
   line-height: 1.71;
 }
 
-address {
+/*address {
   display: inline-flex;
   flex-direction: column;
   margin-bottom: 60px auto;
-}
+}*/
 
 /*.footer-section .logo {
   margin-bottom: 20px;
 }*/
-.adress-item {
+.adress-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -441,7 +461,7 @@ address {
   line-height: 1.19;
   color: var(--logo-button-color);
   text-decoration: inherit;
-  margin: 0px 0 20px 0px;
+  margin-bottom: 20px;
   display: block;
 }
 
