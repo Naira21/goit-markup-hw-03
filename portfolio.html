@@ -18,7 +18,7 @@
   <body>
     <!--шапка сайта-->
     <header class="header-bg">
-      <div class="container">
+      <div class="container header-nav">
         <nav class="nav-list">
           <a href="./index.html" class="logo-header">Web<span class="accent-black">Studio</span></a>
           <ul class="list site-nav">
@@ -38,48 +38,50 @@
 
     <!--Порфтолио студии-->
     <main>
-      <section>
+      <section class="portfolio-bg section">
         <div class="container">
-          <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="portfolio-filter">
-            <li>
-              <button type="button" class="button-text">Все</button>
-              <button type="button" class="button-text">Веб-сайты</button>
-              <button type="button" class="button-text">Приложения</button>
-              <button type="button" class="button-text">Дизайн</button>
-              <button type="button" class="button-text">Маркетинг</button>
-            </li>
-          </ul>
-          <ul class="list-portfolio grid">
+          <div class="portfolio-nav">
+            <h1 class="visually-hidden">Портфолио</h1>
+            <ul class="portfolio-filter list">
+              <li>
+                <button type="button" class="button-text">Все</button>
+                <button type="button" class="button-text">Веб-сайты</button>
+                <button type="button" class="button-text">Приложения</button>
+                <button type="button" class="button-text">Дизайн</button>
+                <button type="button" class="button-text">Маркетинг</button>
+              </li>
+            </ul>
+          </div>
+          <ul class="list-portfolio grid list">
             <li class="item-portfolio grid-item">
               <img src="./images/portfolio/technokryak.jpg" alt="Портфолио сайта Технокряк" width="370" height="294" />
               <h2 class="portfolio-list-title">Технокряк</h2>
-              <p lang="en">Веб-сайт</p>
+              <p class="portfolio-list-type" lang="en">Веб-сайт</p>
             </li>
             <li class="item-portfolio grid-item">
               <img src="./images/portfolio/poster.jpg" alt="Два баскетболиста во время игры" width="370" height="294" />
               <h2 class="portfolio-list-title">Постер New Orlean vs Golden Star</h2>
-              <p lang="en">Дизайн</p>
+              <p class="portfolio-list-type" lang="en">Дизайн</p>
             </li>
             <li class="item-portfolio grid-item">
               <img src="./images/portfolio/seafood.jpg" alt="Лого ресторана Seafood" width="370" height="294" />
               <h2 class="portfolio-list-title">Ресторан Seafood</h2>
-              <p lang="en">Приложение</p>
+              <p class="portfolio-list-type" lang="en">Приложение</p>
             </li>
             <li class="item-portfolio grid-item">
               <img src="./images/portfolio/project_prime.jpg" alt="Черные наушники" width="370" height="294" />
               <h2 class="portfolio-list-title">Проект Prime</h2>
-              <p lang="en">Маркетинг</p>
+              <p class="portfolio-list-type" lang="en">Маркетинг</p>
             </li>
             <li class="item-portfolio grid-item">
               <img src="./images/portfolio/project_boxes.jpg" alt="Две коробки" width="370" height="294" />
               <h2 class="portfolio-list-title">Проект Boxes</h2>
-              <p lang="en">Приложение</p>
+              <p class="portfolio-list-type" lang="en">Приложение</p>
             </li>
             <li class="item-portfolio grid-item">
               <img src="./images/portfolio/inspiration_has_no_borders.jpg" alt="Монитор" width="370" height="294" />
               <h2 class="portfolio-list-title">Inspiration has no Borders</h2>
-              <p lang="en">Веб-сайт</p>
+              <p class="portfolio-list-type" lang="en">Веб-сайт</p>
             </li>
             <li class="item-portfolio grid-item">
               <img
@@ -89,17 +91,17 @@
                 height="294"
               />
               <h2 class="portfolio-list-title">Издание Limited Edition</h2>
-              <p lang="en">Дизайн</p>
+              <p class="portfolio-list-type" lang="en">Дизайн</p>
             </li>
             <li class="item-portfolio grid-item">
               <img src="./images/portfolio/project_lab.jpg" alt="Бирка проекта LAB" width="370" height="294" />
               <h2 class="portfolio-list-title">Проект LAB</h2>
-              <p lang="en">Маркетинг</p>
+              <p class="portfolio-list-type" lang="en">Маркетинг</p>
             </li>
             <li class="item-portfolio grid-item">
               <img src="./images/portfolio/growing_business.jpg" alt="Ноутбук" width="370" height="294" />
               <h2 class="portfolio-list-title">Growing Business</h2>
-              <p lang="en">Приложение</p>
+              <p class="portfolio-list-type" lang="en">Приложение</p>
             </li>
           </ul>
         </div>
@@ -110,14 +112,17 @@
       <section class="footer-bg footer-section">
         <div class="container">
           <a href="./index.html" class="logo-footer list">Web<span class="accent-white">Studio</span></a>
-
           <address>
             <ul class="list">
-              <li class="adress-item">г. Киев, пр-т Леси Украинки, 26</li>
               <li class="adress-item">
-                <a href="mailto:info@devstudio.com" class="link-footer">info@devstudio.com</a>
+                <a class="link" href="https://goo.gl/maps/U16217s55cTrQXSc9" target="_blank" rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
               </li>
-              <li class="adress-item"><a href="tel:+380961111111" class="link-footer">+38 096 111 11 11</a></li>
+              <li class="adress-item">
+                <a href="mailto:info@devstudio.com" class="link-footer link">info@devstudio.com</a>
+              </li>
+              <li class="adress-item"><a href="tel:+380961111111" class="link-footer link">+38 096 111 11 11</a></li>
             </ul>
           </address>
         </div>
