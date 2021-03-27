@@ -93,6 +93,7 @@ body {
   color: var(--accent--text-color);
 }
 
+/*Навигация*/
 .site-nav {
   display: inline-flex;
 }
@@ -158,12 +159,11 @@ a {
 
 .portfolio-filter,
 .site-nav,
-.item,
 .feature-list,
-.list-team,
+.team-list,
 .list-portfolio,
-.item-portfolio,
-.list-activity,
+.portfolio-item,
+.activity-list,
 .link,
 .link-item {
   list-style-type: none;
@@ -260,17 +260,17 @@ ul {
 
 /*Деятельность*/
 
-.list-activity {
+.activity-list {
   margin-top: 50px;
   margin-bottom: 0;
   padding-left: 0;
   display: flex;
 }
 
-.list-activity img {
+.activity-list img {
   padding-right: 30px;
 }
-.list-activity img:last-child {
+.activity-list img:last-child {
   padding-right: 0px;
 }
 
@@ -281,7 +281,7 @@ ul {
   line-height: 1.19;
   margin-bottom: 10px;
 }
-.list-team {
+.team-list {
   display: flex;
   margin-top: 50px;
 }
@@ -383,7 +383,7 @@ a:focus {
   margin-top: 0;
 }
 
-.item-portfolio {
+.portfolio-item {
   border: 1px solid #eeeeee;
   box-sizing: border-box;
   width: 370px;
@@ -416,7 +416,7 @@ address {
   line-height: 1.7;
 }
 
-.link-footer {
+.footer-link {
   color: var(--link-footer);
   font-size: 14px;
   line-height: 1.71;
