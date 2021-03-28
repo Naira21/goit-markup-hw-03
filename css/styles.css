@@ -27,7 +27,7 @@ p {
   color: inherit;
 }
 
-.img {
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -161,7 +161,7 @@ a {
 .site-nav,
 .feature-list,
 .team-list,
-.list-portfolio,
+.portfolio-list,
 .portfolio-item,
 .activity-list,
 .link,
@@ -326,7 +326,7 @@ button {
   color: var(--main-text-color);
   font-size: 16px;
 }
-.button-text:not(:last-child) {
+.filter-button:not(:last-child) {
   margin-right: 8px;
 }
 .button-order {
@@ -364,23 +364,23 @@ a:focus {
   line-height: 2;
   letter-spacing: 0.06em;
   font-weight: 700;
-  margin-top: 20px;
-  margin-left: 24px;
+  margin-bottom: 4px;
 }
 
-.portfolio-nav {
-  justify-content: center;
-  display: flex;
-  margin-bottom: 50px;
+.portfolio-card-info {
+  margin: 20px 24px;
 }
 
 .portfolio-list-type {
-  margin: 0px 24px 20px 24px;
+  margin-bottom: 0px;
   color: var(--link-paragraph-color);
 }
 
 .portfolio-filter {
   margin-top: 0;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 50px;
 }
 
 .portfolio-item {
@@ -401,14 +401,12 @@ a:focus {
   margin-left: 30px;
 }
 /*Футер*/
-.footer-bg {
+footer {
   background-color: var(--second-bg-color);
-}
-
-.footer-section {
   display: block;
   padding: 60px 0;
 }
+
 address {
   font-style: normal;
   color: var(--main-bg-text-color);
