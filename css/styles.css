@@ -171,13 +171,10 @@ a {
 
 .hero-bg {
   background-color: var(--second-bg-color);
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
-.hero {
-  align-items: center;
-  display: flex;
-}
 .hero-content {
   justify-content: center;
   text-align: center;
