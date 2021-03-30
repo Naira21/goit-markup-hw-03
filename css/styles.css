@@ -368,7 +368,10 @@ a:focus {
 }
 
 .portfolio-card-info {
-  margin: 20px 24px;
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
 }
 
 .portfolio-list-type {
@@ -384,7 +387,6 @@ a:focus {
 }
 
 .portfolio-item {
-  border: 1px solid #eeeeee;
   box-sizing: border-box;
   width: 370px;
 }
